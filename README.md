@@ -1,5 +1,12 @@
 # MC-Pi-Estimation
 
+## Features
+
+## Overview
+
+## Mathematical Background
+
+
 ## Usage
 You can clone and use the notebook using the following:
 ``` bash
