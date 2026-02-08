@@ -10,28 +10,32 @@ We first consider a square with side length of 1, which encloses a quadrant of a
   * The area of the unit circle is $\pi r^2$. As we are using a unit circle ($r = 1$), the area is just $\pi$.
   * The area of the quadrant (inside the square) is hence $\pi/4$.
 
-**Estimation Formula:**<br />
+**Estimation Formula:**
 We can generate a large amount of random coordinates $(x, y)$, where $0 \le x, y \le 1$. Using these coordinates, we can determine the ratio of points that fall inside the quadrant of the unit circle to the total number of points generated. 
 
-As the number of points increases, this ratio approaches the ratio of the areas:<br />
-$$ \frac{\text{Points Inside}}{\text{Total Points}} = \frac{\text{Area of Quadrant}}{\text{Area of Square}} = \frac{\pi/4}{1} $$
+As the number of points increases, this ratio approaches the ratio of the areas:
 
-Therefore, we can estimate $\pi$ using the following equation:<br />
-$$\pi = 4 \times \frac{Points Inside}{Total Points}$$
+$$\frac{\text{Points Inside}}{\text{Total Points}} = \frac{\text{Area of Quadrant}}{\text{Area of Square}} = \frac{\pi/4}{1}$$
 
-**Computational Efficiency:**<br />
-To determine if a point $(x, y)$ lies within the circle, we check if its distance from the origin is less than or equal to the radius ($r = 1$ as it is a unit circle), using the following:<br />
+Therefore, we can estimate $\pi$ using the following equation:
+
+$$\pi = 4 \times \frac{\text{Points Inside}}{\text{Total Points}}$$
+
+**Computational Efficiency:**
+To determine if a point $(x, y)$ lies within the circle, we check if its distance from the origin is less than or equal to the radius ($r = 1$ as it is a unit circle), using the following:
+
 $$\sqrt{x^2 + y^2} \le 1$$
 
-However, as the radius of the circle is 1, we can simplify the above. This can improve computational efficiency by using the simnplified form, which is as follows:<br />
-$$ x^2 + y^2 \le 1^2 \Longrightarrow x^2 + y^2 \le 1$$
+However, as the radius of the circle is 1, we can simplify the above. This can improve computational efficiency by using the simplified form, which is as follows:
+
+$$x^2 + y^2 \le 1^2 \implies x^2 + y^2 \le 1$$
 
 ## Features
 * Chunking for estimations with a large amount of iterations for memory management and efficiency.
 * Visualisation of the estimation method and where randomly generated points fall.
 * Visualisation of the convergence of estimations to Pi itself (and how error decreases with more iterations).
 
-## Tech Stack
+## Dependencies
 * NumPy
 * Matplotlib
 * Pandas
