@@ -14,7 +14,7 @@ We first consider a square with side length of 1, which encloses a quadrant of a
 We can generate a large amount of random coordinates $(x, y)$, where $0 \le x, y \le 1$. Using these coordinates, we can determine the ratio of points that fall inside the quadrant of the unit circle to the total number of points generated. 
 
 As the number of points increases, this ratio approaches the ratio of the areas:<br />
-$$ \frac{Points Inside}{Total Points} = \frac{Area of Quadrant}{Area of Square} = \frac{\pi/4}{1}$$
+$$ \frac{\text{Points Inside}}{\text{Total Points}} = \frac{\text{Area of Quadrant}}{\text{Area of Square}} = \frac{\pi/4}{1} $$
 
 Therefore, we can estimate $\pi$ using the following equation:<br />
 $$\pi = 4 \times \frac{Points Inside}{Total Points}$$
