@@ -7,7 +7,7 @@ The Monte Carlo method estimates the value of $\pi$ by simulating random points 
 **Geometric Approach:**
 We first consider a square with side length of 1, which encloses a quadrant of a unit circle. The following are hence true:
   * The area of the square is 1.
-  * The area of the unit circle is $\pir^2$. As we are using a unit circle ($r = 1$), the area is just $\pi$.
+  * The area of the unit circle is $\pi r^2$. As we are using a unit circle ($r = 1$), the area is just $\pi$.
   * The area of the quadrant (inside the square) is hence $\pi/4$.
 
 **Estimation Formula:**
