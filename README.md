@@ -1,4 +1,4 @@
-# MC-Pi-Estimation
+# Monte Carlo Pi Estimation
 This notebook estimates the value for Pi via the Monte Carlo method. 
 
 ## Mathematical Background
